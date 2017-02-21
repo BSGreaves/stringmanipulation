@@ -33,13 +33,13 @@ inputField.addEventListener("keypress", function(e){
 // Functions
 
 function manipulate() {
-	testString = inputField.value;
-	validity = true;
-	validate(testString);
+	string = inputField.value.toLowerCase();
+	validity = true; //initial value. "validate" will turn it false if numbers are entered
+	validate(string);
 	if (validity === true) {
-		reversal(testString);
-		alphabits(testString);
-		palindrome(testString);
+		reversal(string);
+		alphabits(string);
+		palindrome(string);
 	}
 };
 
